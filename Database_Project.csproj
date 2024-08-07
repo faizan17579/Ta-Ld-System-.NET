@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F8524B0-2774-4012-8835-DBBD96B63F8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Database_Project</RootNamespace>
+    <AssemblyName>Database_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_dashboard.Designer.cs">
+      <DependentUpon>Admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence.Designer.cs">
+      <DependentUpon>Attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comitee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comitee.Designer.cs">
+      <DependentUpon>Comitee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commiteelogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commiteelogin.Designer.cs">
+      <DependentUpon>Commiteelogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commitee_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commitee_Dashboard.Designer.cs">
+      <DependentUpon>Commitee_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment.Designer.cs">
+      <DependentUpon>Enrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackReview.Designer.cs">
+      <DependentUpon>FeedbackReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgotpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgotpass.Designer.cs">
+      <DependentUpon>Forgotpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labinstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labinstructor.Designer.cs">
+      <DependentUpon>Labinstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDdashborad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDdashborad.Designer.cs">
+      <DependentUpon>LDdashborad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDlogin.Designer.cs">
+      <DependentUpon>LDlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LDTasks.Designer.cs">
+      <DependentUpon>LDTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ldviewtask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ldviewtask.Designer.cs">
+      <DependentUpon>Ldviewtask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturerdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturerdashboard.Designer.cs">
+      <DependentUpon>Lecturerdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentforTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentforTA.Designer.cs">
+      <DependentUpon>PaymentforTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentview.Designer.cs">
+      <DependentUpon>paymentview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRegister.Designer.cs">
+      <DependentUpon>StudentRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_2.Designer.cs">
+      <DependentUpon>student_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_dashboard.Designer.cs">
+      <DependentUpon>Student_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Submitapp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Submitapp.Designer.cs">
+      <DependentUpon>Submitapp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaAssign.Designer.cs">
+      <DependentUpon>TaAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tadashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tadashboard.Designer.cs">
+      <DependentUpon>Tadashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tadetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tadetails.Designer.cs">
+      <DependentUpon>Tadetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Talogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Talogin.Designer.cs">
+      <DependentUpon>Talogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tatasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tatasks.Designer.cs">
+      <DependentUpon>Tatasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ta_LD_managementsystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ta_LD_managementsystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacherlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacherlogin.Designer.cs">
+      <DependentUpon>Teacherlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Techerassignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Techerassignment.Designer.cs">
+      <DependentUpon>Techerassignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewapp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewapp.Designer.cs">
+      <DependentUpon>viewapp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_dashboard.resx">
+      <DependentUpon>Admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence.resx">
+      <DependentUpon>Attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comitee.resx">
+      <DependentUpon>Comitee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commiteelogin.resx">
+      <DependentUpon>Commiteelogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commitee_Dashboard.resx">
+      <DependentUpon>Commitee_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment.resx">
+      <DependentUpon>Enrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackReview.resx">
+      <DependentUpon>FeedbackReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgotpass.resx">
+      <DependentUpon>Forgotpass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labinstructor.resx">
+      <DependentUpon>Labinstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDdashborad.resx">
+      <DependentUpon>LDdashborad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDlogin.resx">
+      <DependentUpon>LDlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDTasks.resx">
+      <DependentUpon>LDTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ldviewtask.resx">
+      <DependentUpon>Ldviewtask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturerdashboard.resx">
+      <DependentUpon>Lecturerdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentforTA.resx">
+      <DependentUpon>PaymentforTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentview.resx">
+      <DependentUpon>paymentview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StudentRegister.resx">
+      <DependentUpon>StudentRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_2.resx">
+      <DependentUpon>student_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_dashboard.resx">
+      <DependentUpon>Student_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Submitapp.resx">
+      <DependentUpon>Submitapp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaAssign.resx">
+      <DependentUpon>TaAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tadashboard.resx">
+      <DependentUpon>Tadashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tadetails.resx">
+      <DependentUpon>Tadetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Talogin.resx">
+      <DependentUpon>Talogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tatasks.resx">
+      <DependentUpon>Tatasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacherlogin.resx">
+      <DependentUpon>Teacherlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Techerassignment.resx">
+      <DependentUpon>Techerassignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewapp.resx">
+      <DependentUpon>viewapp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Ta_LD_managementsystemDataSet.xsc">
+      <DependentUpon>Ta_LD_managementsystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ta_LD_managementsystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ta_LD_managementsystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ta_LD_managementsystemDataSet.xss">
+      <DependentUpon>Ta_LD_managementsystemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-04-21 at 1.00.50 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student5651.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TeachEase logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Professor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Professor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assistant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Committee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Campus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Campus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Campus_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Border.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
